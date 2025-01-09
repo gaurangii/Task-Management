@@ -61,7 +61,7 @@ Contributions are welcome! To contribute:
    
 5. Open a Pull Request.
 
-##hey
+
 *Contact*
 
 For any inquiries or feedback, feel free to reach out:
