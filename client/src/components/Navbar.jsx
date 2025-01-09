@@ -7,7 +7,8 @@ const Navbar = () => {
   const [showLoginForm, setShowLoginForm] = useState(false); // Track login form visibility
   const [user, setUser] = useState({ username: "", password: "" }); // User object with username and password
   const [error, setError] = useState(""); // Error handling
-
+  const token = localStorage.getItem("token");
+  console.log(token);
   
   const getInitials = (name) => {
     return name
@@ -134,8 +135,10 @@ const Navbar = () => {
               >
                 Cancel
               </button>
+
               <button
                 type="submit"
+                
                 className="px-4 py-2 bg-blue-600 text-white rounded-lg"
               >
                 Login
