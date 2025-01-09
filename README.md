@@ -8,49 +8,41 @@ Task Management is a web-based application designed to help users efficiently ma
 - Database Integration: Uses MongoDB for efficient data storage and retrieval.
 - Responsive Design: Fully responsive UI for desktop and mobile devices.
 
-## Technologies Used
+ *Technologies Used*
 
 - *Frontend*: React, Tailwind CSS
 - *Backend*: Node.js, Express.js
 - *Database*: MongoDB
 - *Version Control*: Git and GitHub
 
-## Installation and Setup
+*Installation and Setup*
 
 Follow these steps to set up the project locally:
 
-1. *Clone the Repository*
+1. *Clone the Repository* : 
    bash
    git clone https://github.com/gaurangii/Task-Management.git
    cd Task-Management
    
 
-2. *Install Dependencies*
+2. *Install Dependencies* :
    bash
    npm install
    
 
-3. *Configure the Environment*
-   Create a .env file in the root directory and add your configuration details:
-   env
-   PORT=5000
-   DB_URI=your_mongodb_connection_string
-   
-
-4. *Run the Application*
+3. *Run the Application*
    bash
-   npm start
+   npm run start
    
 
-   The application will be available at http://localhost:5000.
+   The application will be available at http://localhost:3000.
 
-## Usage
+*Usage*
 
 1. *Create Tasks*: Navigate to the "Add Task" section to create a new task.
 2. *Manage Tasks*: Use the dashboard to view, edit, or delete tasks.
-3. *Filter and Search*: Utilize the search bar or filter options to organize your tasks.
 
-## Contributing
+ *Contributing*
 
 Contributions are welcome! To contribute:
 
@@ -69,15 +61,12 @@ Contributions are welcome! To contribute:
    
 5. Open a Pull Request.
 
-## License
-
-This project is licensed under the [MIT License](LICENSE).
-
-## Contact
+##hey
+*Contact*
 
 For any inquiries or feedback, feel free to reach out:
 - *Author*: Gaurangi
-- *Email*: [Your Email Address]
+- *Email*: gaurangisharma3107@gmail.com
 - *GitHub*: [https://github.com/gaurangii](https://github.com/gaurangii)
 
 ---
