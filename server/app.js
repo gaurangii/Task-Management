@@ -7,7 +7,7 @@ const JWT_SECRET = "qwerty"
 const bcrypt=require("bcrypt")
 const {z}=require("zod")
 const cors =require("cors")
-
+const path=require("path")
 mongoose.connect('mongodb+srv://lpsgaurangi4558:7W0ucOPXEPHkVD5w@cluster0.1y9dv.mongodb.net/TaskManager');
 app.use(express.json());
 
@@ -16,7 +16,9 @@ app.use(cors({
     methods: ['GET', 'POST','PUT', 'DELETE'],
     credentials: true,
   }));
-  
+
+  const _dirname=path.resolve();
+
   app.use(express.json()); 
 
 function auth(req,res,next){
@@ -213,7 +215,10 @@ app.get('/todo/:id',auth,async(req,res)=>{
     }
 })
 
-
+app.use(express.static(path.join(_dirname,"/client/dist"))),
+app.get("*",(req,res)=>{
+res.sendFile(path.resolve(_dirname,"client","dist","index.html"));
+});
 
 app.listen(3000, () => {
     console.log('Server is running on port 3000');

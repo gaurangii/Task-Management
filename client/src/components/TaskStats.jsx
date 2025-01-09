@@ -5,28 +5,7 @@ const TaskStats = ({ totalTasks, completedTasks, inProgressTasks }) => {
   const [todos, setTodos] = useState([]);
   const [error, setError] = useState(null);
 
-  useEffect(() => {
-    const token = localStorage.getItem("token");
 
-    // Fetch data from the API
-    axios
-      .get("http://localhost:3000/todos", {
-        headers: {
-          token, // Send token in headers
-        },
-      })
-      .then((response) => {
-        setTodos(response.data);
-      })
-
-
-      .catch((err) => {
-        setError("Failed to fetch tasks");
-      });
-
-    
-    
-  }, []);
 
   const stats = [
     {
